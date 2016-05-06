@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Gallery | Blackwindows.org.uk</title>
+	<meta name="description" content="Instagram Search Engine">
+	<meta name="author" content="Team CARB">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script type="text/javascript" src="js/blackwindows.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/blackwindows.css" />
+	<script>
+	var bw = new Blackwindows();
+	bw.fetchAlbum(dictionary["featured"]).then(function(returndata){
+		bw.processImages(returndata);
+	});
+
+	</script>
+</head>
+<body>
+<div class="contact"><span class="glyphicon glyphicon-earphone" style="float: right; line-height: 25px; margin-right: 25px;"> 07714710255</span> <span class="glyphicon glyphicon-envelope" style="float: right; line-height: 25px; margin-right: 25px;"> office@blackwindows.org.uk</span></div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img id="brand-logo" src="img/websitelogo.png" class="img-responsive" style="max-height: 40px; margin-top: -5px;" />
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+        <li class="activeNav"><a href="gallery.html">Gallery</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: white;">
+            <li><a href="#">Car Windows</a></li>
+            <li><a href="#">Lights</a></li>
+            <li><a href="#">Car Advertising</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Home Windows</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </div>
+</nav>
+<div class="socialBar">
+	<div class="fb-like" data-href="https://www.facebook.com/pages/Black-Windows/551077738284508" data-width="450" data-colorscheme="dark" data-layout="box_count" data-show-faces="true" data-send="true"></div>
+</div>
+<div class="container" style="width: 70%;">
+	<div class="row">
+		<div class="col-md-2">
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active"><a href="javascript:void(0)" data-make="featured">Featured</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="audi">Audi</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="bmw">BMW</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="ford_toyota">Ford & Toyota</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="mercedes">Mercedes</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="mmc">Mazda, Mini & Citroen</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="lrrover">Land & Range Rover</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="vx">Vauxhall</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="vw">Volkswagen</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="sm">Subaru & Mitsubishi</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="svk">Skoda & Volvo & KIA</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="honda">Honda</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="other">Other</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="home">House</a></li>
+			  	<li role="presentation"><a href="javascript:void(0)" data-make="carAdvert">Car Advertising</a></li>
+			</ul>
+		</div>
+		<div class="col-md-8 col-md-offset-1">
+		  	<section id="images">
+		
+			</section>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
